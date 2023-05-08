@@ -1,0 +1,2 @@
+# PreProject
+Kata training
