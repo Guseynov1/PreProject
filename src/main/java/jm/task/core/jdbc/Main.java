@@ -14,7 +14,6 @@ public class Main {
     private static final User user4 = new User("Martin", "Lorens", (byte) 22);
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-
         userService.createUsersTable();
 
         userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
