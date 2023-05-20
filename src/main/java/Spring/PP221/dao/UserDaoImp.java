@@ -1,12 +1,14 @@
 package Spring.PP221.dao;
 
-import Spring.PP221.model.User;
+import Spring.PP221.model.Car;
+import Spring.PP221.model.Users;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class UserDaoImp implements UserDao {
@@ -15,15 +17,23 @@ public class UserDaoImp implements UserDao {
     private SessionFactory sessionFactory;
 
     @Override
-    public void add(User user) {
-        sessionFactory.getCurrentSession().save(user);
+    public void add(Users users, Car car) {
+        sessionFactory.getCurrentSession().save(users);
+        sessionFactory.getCurrentSession().save(car);
+    }
+    @Override
+    @SuppressWarnings("unchecked")
+    public List<Users> listUsers() {
+        TypedQuery<Users> query=sessionFactory.getCurrentSession().createQuery("from Users");
+        return query.getResultList();
     }
 
     @Override
-    @SuppressWarnings("unchecked")
-    public List<User> listUsers() {
-        TypedQuery<User> query=sessionFactory.getCurrentSession().createQuery("from User");
-        return query.getResultList();
+    public Users getUserByCar(String model, int series) {
+        TypedQuery<Users> q = sessionFactory.getCurrentSession().createQuery("from Users u where u.car.model = :m and u.car.series = :o");
+        q.setParameter("m", model);
+        q.setParameter("o", series);
+        return  q.setMaxResults(1).getSingleResult();
     }
 
 }
