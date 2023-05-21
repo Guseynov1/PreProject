@@ -1,6 +1,6 @@
 package Spring.PP214;
 
-import Spring.PP214.config.AppConfig;
+import Spring.PP214.config.AppConfigPP214;
 import Spring.PP214.model.AnimalsCage;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AppConfig.class)
+@ContextConfiguration(classes = AppConfigPP214.class)
 public class MainTest {
 
     @Autowired

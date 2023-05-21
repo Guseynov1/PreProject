@@ -5,6 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages = "Spring.PP214")
-public class AppConfig {
+public class AppConfigPP214 {
 
 }

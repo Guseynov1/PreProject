@@ -1,6 +1,6 @@
 package Spring.PP221;
 
-import Spring.PP221.config.AppConfig;
+import Spring.PP221.config.AppConfigPP221;
 import Spring.PP221.model.Car;
 import Spring.PP221.model.Users;
 import Spring.PP221.service.UserService;
@@ -11,7 +11,7 @@ import java.util.List;
 public class MainApp {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfigPP221.class);
 
         UserService userService = context.getBean(UserService.class);
 

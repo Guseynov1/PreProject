@@ -22,7 +22,7 @@ import java.util.Properties;
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
 @ComponentScan(value = "Spring.PP221")
-public class AppConfig {
+public class AppConfigPP221 {
 
     @Autowired
     private Environment env;

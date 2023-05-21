@@ -1,6 +1,6 @@
 package Spring.PP215;
 
-import Spring.PP215.config.AppConfig;
+import Spring.PP215.config.AppConfigPP215;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AppConfig.class)
+@ContextConfiguration(classes = AppConfigPP215.class)
 public class MainTest {
 
     @Autowired

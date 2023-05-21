@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-public class AppConfig {
+public class AppConfigPP213 {
 
     @Bean(name="helloworld")
     public HelloWorld getHelloWorld() {

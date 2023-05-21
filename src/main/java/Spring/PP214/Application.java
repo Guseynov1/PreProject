@@ -1,6 +1,6 @@
 package Spring.PP214;
 
-import Spring.PP214.config.AppConfig;
+import Spring.PP214.config.AppConfigPP214;
 import Spring.PP214.model.AnimalsCage;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Application {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfigPP214.class);
         for (int i = 0; i < 5; i++) {
             AnimalsCage bean = applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();

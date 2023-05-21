@@ -19,7 +19,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Transaction transaction = null;
         try (Session session = Util.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.createNativeQuery("CREATE TABLE IF NOT EXISTS mysql.users" +
+            session.createNativeQuery("CREATE TABLE IF NOT EXISTS kata.users" +
                     " (id mediumint not null auto_increment, name VARCHAR(25), " +
                     "lastname VARCHAR(25), " +
                     "age tinyint, " +
@@ -39,7 +39,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Transaction transaction = null;
         try (Session session = Util.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.createNativeQuery("DROP TABLE IF EXISTS mysql.users").executeUpdate();
+            session.createNativeQuery("DROP TABLE IF EXISTS kata.users").executeUpdate();
             transaction.commit();
             System.out.println("Таблица удалена");
         } catch (HibernateException e) {
@@ -107,7 +107,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Transaction transaction = null;
         try (Session session = Util.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.createNativeQuery("TRUNCATE TABLE mysql.users;").executeUpdate();
+            session.createNativeQuery("TRUNCATE TABLE kata.users;").executeUpdate();
             transaction.commit();
             System.out.println("Таблица очищена");
         } catch (HibernateException e) {

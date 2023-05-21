@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages="Spring.PP215")
-public class AppConfig {
+public class AppConfigPP215 {
 
     @Bean
     public static Island2 getIsland(Wood3 wood) {

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class App {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfigPP213.class);
         HelloWorld bean1h = (HelloWorld) applicationContext.getBean("helloworld");
         HelloWorld bean2h = (HelloWorld) applicationContext.getBean("helloworld");
 
