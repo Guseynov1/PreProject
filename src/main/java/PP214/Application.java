@@ -1,7 +1,7 @@
-package Spring.PP214;
+package PP214;
 
-import Spring.PP214.config.AppConfigPP214;
-import Spring.PP214.model.AnimalsCage;
+import PP214.config.AppConfigPP214;
+import PP214.model.AnimalsCage;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

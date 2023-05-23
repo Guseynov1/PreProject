@@ -1,7 +1,7 @@
 package Spring.PP214;
 
-import Spring.PP214.config.AppConfigPP214;
-import Spring.PP214.model.AnimalsCage;
+import PP214.config.AppConfigPP214;
+import PP214.model.AnimalsCage;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

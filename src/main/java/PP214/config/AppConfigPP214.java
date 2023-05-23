@@ -1,4 +1,4 @@
-package Spring.PP214.config;
+package PP214.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

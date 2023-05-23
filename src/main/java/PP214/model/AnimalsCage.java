@@ -1,4 +1,4 @@
-package Spring.PP214.model;
+package PP214.model;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;

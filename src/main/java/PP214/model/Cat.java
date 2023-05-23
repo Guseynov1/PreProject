@@ -1,13 +1,13 @@
-package Spring.PP214.model;
+package PP214.model;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("dog")
-public class Dog extends Animal {
+@Qualifier("cat")
+public class Cat extends Animal {
     @Override
     public String toString() {
-        return "Im a Dog";
+        return "Im a Cat";
     }
 }
