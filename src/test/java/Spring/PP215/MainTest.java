@@ -1,6 +1,7 @@
 package Spring.PP215;
 
-import Spring.PP215.config.AppConfigPP215;
+import PP215.KoscheiTheDeathless;
+import PP215.config.AppConfigPP215;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

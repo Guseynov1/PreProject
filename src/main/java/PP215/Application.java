@@ -1,6 +1,6 @@
-package Spring.PP215;
+package PP215;
 
-import Spring.PP215.config.AppConfigPP215;
+import PP215.config.AppConfigPP215;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

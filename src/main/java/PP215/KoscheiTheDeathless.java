@@ -1,6 +1,6 @@
-package Spring.PP215;
+package PP215;
 
-import Spring.PP215.models.Ocean1;
+import PP215.models.Ocean1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

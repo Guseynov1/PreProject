@@ -1,4 +1,4 @@
-package Spring.PP215.models;
+package PP215.models;
 
 import org.springframework.stereotype.Component;
 

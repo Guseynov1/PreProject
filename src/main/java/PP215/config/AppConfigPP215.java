@@ -1,7 +1,7 @@
-package Spring.PP215.config;
+package PP215.config;
 
-import Spring.PP215.models.Island2;
-import Spring.PP215.models.Wood3;
+import PP215.models.Island2;
+import PP215.models.Wood3;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
