@@ -1,4 +1,4 @@
-package Spring.PP213;
+package PP213;
 
 import lombok.Getter;
 import lombok.Setter;

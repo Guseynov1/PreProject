@@ -1,4 +1,4 @@
-package Spring.PP213;
+package PP213;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

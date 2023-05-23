@@ -1,5 +1,8 @@
 package Spring.PP213;
 
+import PP213.AppConfigPP213;
+import PP213.Cat;
+import PP213.HelloWorld;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
