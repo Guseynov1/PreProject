@@ -1,7 +1,7 @@
-package web.service;
+package PP222.service;
 
 import org.springframework.stereotype.Component;
-import web.model.Car;
+import PP222.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;

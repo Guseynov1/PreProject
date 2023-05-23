@@ -1,4 +1,4 @@
-package web.config;
+package PP222.config;
 
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

@@ -1,6 +1,6 @@
-package web.service;
+package PP222.service;
 
-import web.model.Car;
+import PP222.model.Car;
 
 import java.util.List;
 
