@@ -1,14 +1,13 @@
-package Spring.PP221.dao;
+package PP221.dao;
 
-import Spring.PP221.model.Car;
-import Spring.PP221.model.Users;
+import PP221.model.Car;
+import PP221.model.Users;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class UserDaoImp implements UserDao {

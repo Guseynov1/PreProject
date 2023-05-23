@@ -1,7 +1,7 @@
-package Spring.PP221.config;
+package PP221.config;
 
-import Spring.PP221.model.Car;
-import Spring.PP221.model.Users;
+import PP221.model.Car;
+import PP221.model.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,11 +1,11 @@
-package Spring.PP221.dao;
+package PP221.service;
 
-import Spring.PP221.model.Car;
-import Spring.PP221.model.Users;
+import PP221.model.Car;
+import PP221.model.Users;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserService {
     void add(Users users, Car car);
     List<Users> listUsers();
     Users getUserByCar(String model, int series);

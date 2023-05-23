@@ -1,14 +1,13 @@
-package Spring.PP221.service;
+package PP221.service;
 
-import Spring.PP221.dao.UserDao;
-import Spring.PP221.model.Car;
-import Spring.PP221.model.Users;
+import PP221.dao.UserDao;
+import PP221.model.Car;
+import PP221.model.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserServiceImp implements UserService {

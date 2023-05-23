@@ -1,9 +1,9 @@
-package Spring.PP221;
+package PP221;
 
-import Spring.PP221.config.AppConfigPP221;
-import Spring.PP221.model.Car;
-import Spring.PP221.model.Users;
-import Spring.PP221.service.UserService;
+import PP221.config.AppConfigPP221;
+import PP221.model.Car;
+import PP221.model.Users;
+import PP221.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;

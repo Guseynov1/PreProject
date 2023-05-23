@@ -1,4 +1,4 @@
-package Spring.PP221.model;
+package PP221.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
