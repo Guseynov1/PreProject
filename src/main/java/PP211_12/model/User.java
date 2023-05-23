@@ -1,4 +1,4 @@
-package jm.task.core.jdbc.model;
+package PP211_12.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

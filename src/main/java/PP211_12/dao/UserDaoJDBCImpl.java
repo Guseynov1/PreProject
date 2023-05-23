@@ -1,7 +1,7 @@
-package jm.task.core.jdbc.dao;
+package PP211_12.dao;
 
-import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.util.Util;
+import PP211_12.model.User;
+import PP211_12.util.Util;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

@@ -115,9 +115,9 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>2.4</version>
                     <configuration>
-                        <warSourceDirectory>src/webapp</warSourceDirectory>
+                        <warSourceDirectory>src/PP222_web</warSourceDirectory>
                         <warName>spring_mvc</warName>
-                        <failOnMissingWebXml>false</failOnMissingWebXml> <!-- позволит запускать проект с помощью маппинга контроллерами, без использования конфигурации в web.xml -->
+                        <failOnMissingWebXml>false</failOnMissingWebXml> <!-- позволит запускать проект с помощью маппинга контроллерами, без использования конфигурации в PP222.xml -->
                     </configuration>
                 </plugin>
             </plugins>

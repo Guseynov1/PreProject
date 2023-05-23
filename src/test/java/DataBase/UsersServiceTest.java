@@ -1,8 +1,8 @@
 package DataBase;
 
-import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.service.UserService;
-import jm.task.core.jdbc.service.UserServiceImpl;
+import PP211_12.model.User;
+import PP211_12.service.UserService;
+import PP211_12.service.UserServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 

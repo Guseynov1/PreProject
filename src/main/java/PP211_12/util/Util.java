@@ -1,6 +1,6 @@
-package jm.task.core.jdbc.util;
+package PP211_12.util;
 
-import jm.task.core.jdbc.model.User;
+import PP211_12.model.User;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;

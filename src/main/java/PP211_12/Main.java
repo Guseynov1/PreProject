@@ -1,7 +1,7 @@
-package jm.task.core.jdbc;
+package PP211_12;
 
-import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.service.UserServiceImpl;
+import PP211_12.model.User;
+import PP211_12.service.UserServiceImpl;
 
 import java.sql.SQLException;
 
@@ -15,7 +15,6 @@ public class Main {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
         userService.createUsersTable();
-
         userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
         userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
         userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());

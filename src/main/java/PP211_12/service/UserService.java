@@ -1,6 +1,6 @@
-package jm.task.core.jdbc.service;
+package PP211_12.service;
 
-import jm.task.core.jdbc.model.User;
+import PP211_12.model.User;
 
 import java.sql.SQLException;
 import java.util.List;
