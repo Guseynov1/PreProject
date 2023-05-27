@@ -1,5 +1,6 @@
 package PP222.config;
 
+import lombok.AllArgsConstructor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,22 +15,18 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("PP222")
+@AllArgsConstructor
 public class WebConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
-
-    public WebConfig(ApplicationContext applicationContext) {
-        this.applicationContext = applicationContext;
-    }
-
 
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/WEB-INF/pages/");
+        templateResolver.setPrefix("/WEB-INF/");
         templateResolver.setSuffix(".html");
-        templateResolver.setCharacterEncoding("UTF-8"); // кириллица
+//        templateResolver.setCharacterEncoding("UTF-8");
         return templateResolver;
     }
 
@@ -41,13 +38,12 @@ public class WebConfig implements WebMvcConfigurer {
         return templateEngine;
     }
 
-
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
         resolver.setTemplateEngine(templateEngine());
+//        resolver.setCharacterEncoding("UTF-8");
+//        resolver.setContentType("text/html; charset=UTF-8");
         registry.viewResolver(resolver);
-        resolver.setCharacterEncoding("UTF-8"); // кириллица
-        resolver.setContentType("text/html; charset=UTF-8"); // кириллица
     }
 }

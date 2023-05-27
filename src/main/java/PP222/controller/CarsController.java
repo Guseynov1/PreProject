@@ -3,15 +3,14 @@ package PP222.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import PP222.model.Car;
 import PP222.service.CarsService;
 import PP222.service.CarsServiceImp;
 
 import java.util.List;
 
-@Controller
+//@Controller
 public class CarsController {
 
     @Autowired
