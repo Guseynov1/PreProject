@@ -10,7 +10,7 @@ import PP222.service.CarsServiceImp;
 
 import java.util.List;
 
-//@Controller
+@Controller
 public class CarsController {
 
     @Autowired
