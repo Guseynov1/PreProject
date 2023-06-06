@@ -1,43 +1,42 @@
 package PP231.service;
 
-
-import PP231.DAO.UserDAO;
-import PP231.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import PP231.dao.UserDao;
+import PP231.model.User;
 
 import java.util.List;
 
+@AllArgsConstructor
 @Service
-public class UserServiceImp implements UserService{
+public class UserServiceImp implements UserService {
 
-    @Autowired
-    private UserDAO userDAO;
 
+    private final UserDao userDao;
     @Transactional
-    public void add (User user) {
-        userDAO.add(user);
+    @Override
+    public void save(User user) {
+        userDao.save(user);
     }
 
-    @Transactional
-    public void update (Long id, User updatedUser) {
-        userDAO.update(id, updatedUser);
+    @Override
+    public User findById(Long id) {
+        return userDao.findById(id);
     }
 
-    @Transactional
-    public void delete (Long id) {
-        userDAO.delete(id);
+    @Override
+    public List<User> findAll() {
+        return userDao.findAll();
     }
-
     @Transactional
-    public List<User> getAll () {
-        return userDAO.getAll();
+    @Override
+    public void update(Long id, User user) {
+        userDao.update(id, user);
     }
-
     @Transactional
-    public User show (Long id) {
-        return userDAO.show(id);
+    @Override
+    public void delete(User user) {
+        userDao.delete(user);
     }
-
 }

@@ -5,13 +5,27 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter
+import jakarta.persistence.*;
+
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name = "users")
 public class User {
 
-    private int age;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private String nickname;
+    private Integer age;
 
+
+    @Override
+    public String toString() {
+        return String.format("ID(%d) %s, %d, %s", id, name, age, nickname);
+    }
 }

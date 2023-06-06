@@ -1,10 +1,11 @@
-package PP231.service;
+package PP231.dao;
 
 import PP231.model.User;
 
 import java.util.List;
 
-public interface UserService {
+
+public interface UserDao  {
     void save(User user);
 
     User findById(Long id);
